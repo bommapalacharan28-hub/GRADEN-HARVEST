@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Garden Harvest Register",
+    "slug": "garden-harvest-register",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#153F2E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.everydayinnovators.gardenharvestregister"
+    },
+    "android": {
+      "package": "com.everydayinnovators.gardenharvestregister",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#153F2E"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-sqlite",
+      ["expo-document-picker", {"iCloudContainerEnvironment":"Production"}],
+      ["expo-splash-screen", {"image":"./assets/splash.png","imageWidth":180,"resizeMode":"contain","backgroundColor":"#153F2E"}]
+    ],
+    "experiments": {"typedRoutes": false}
+  }
+}
